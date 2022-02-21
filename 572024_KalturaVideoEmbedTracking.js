@@ -81,22 +81,22 @@ kWidget.addReadyCallback(function(){
 	kdp.kBind('firstQuartile', function(){ // when the first quartile is hit, event listener
 			var dend = new Date(); // get the current time
 			Qualtrics.SurveyEngine.setEmbeddedData('watch.25', dend.getTime()); //set the current time in embed 5
-		    kdp.kUnBind('firstQuartile');
+		    	kdp.kUnBind('firstQuartile');
 		});
 	kdp.kBind('secondQuartile', function(){ // when the first quartile is hit, event listener
 			var dend = new Date(); // get the current time
 			Qualtrics.SurveyEngine.setEmbeddedData('watch.50', dend.getTime()); //set the current time in embed 5
-      kdp.kUnBind('secondQuartile');
+      			kdp.kUnBind('secondQuartile');
 		});
 	kdp.kBind('thirdQuartile', function(){ // when the first quartile is hit, event listener
 			var dend = new Date(); // get the current time
 			Qualtrics.SurveyEngine.setEmbeddedData('watch.75', dend.getTime()); //set the current time in embed 5
-      kdp.kUnBind('thirdQuartile');
+      			kdp.kUnBind('thirdQuartile');
 		});
 	kdp.kBind('playerPlayEnd', function(){ // when the first quartile is hit, event listener
 			var dend = new Date(); // get the current time
 			Qualtrics.SurveyEngine.setEmbeddedData('watch.100', dend.getTime()); //set the current time in embed 5
-      kdp.kUnBind('playerPlayEnd');
+      			kdp.kUnBind('playerPlayEnd');
 		});
 });
 
