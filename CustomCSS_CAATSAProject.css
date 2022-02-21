@@ -1,0 +1,884 @@
+/* Custom CSS for a research survey
+*/
+
+/* IMPORTANT: Make sure the survey formatting is set to "Blank" (or whatever
+variant Qualtrics currently has of "Blank") before adding this custom CSS so
+that Qualtrics CSS and this CSS don't conflict. */
+
+
+/*Despite the name, this is the general browser background*/
+#SurveyEngineBody {
+  background: #f7f6f0 none no-repeat center fixed;
+  background-size: cover;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", arial, sans-serif;
+}
+
+/* ensure that the radio buttons go to the top of the response label */
+.Skin input, .Skin input, .Skin select, .Skin textarea {
+    vertical-align: top;
+}
+
+/* Colors for "Request Response" highlights */
+/* Does not work for individual matrix items, we have JavaScript for that */
+.Skin .QuestionOuter.Highlight .Inner {background:#FFFFD9}
+.Skin .QuestionOuter.Highlight .Inner .ReadableAlt {background:#F7F7D2}
+
+/* Questions Specific */
+
+/* Reduce Date of Marriage dropdown box size */
+#QID826 div.QuestionBody {max-width: 200px;}
+
+/* adjust label size for kid # questions */
+#QID584 input.TextEntryBox{
+  width: 100%;
+}
+
+/* moving text entry boxes to the side */
+#QID18 input.TextEntryBox {
+  display: inline-block;
+  width: 400px !important;
+}
+
+#QID584 input.TextEntryBox {
+  display: block;
+  width: 80px !important;
+}
+#QID585 input.TextEntryBox {
+  display: block;
+  width: 80px !important;
+}
+#QID589 input.TextEntryBox {
+  display: block;
+  width: 80px !important;
+}
+
+#QID586 input.TextEntryBox {
+  width: 10em;
+}
+#QID764 input.TextEntryBox {
+  width: 10em;
+}
+#QID588 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID745 input.TextEntryBox {
+  width: 10em;
+}
+#QID771 input.TextEntryBox {
+  width: 10em;
+}
+#QID772 input.TextEntryBox {
+  width: 10em;
+}
+#QID773 input.TextEntryBox {
+  width: 10em;
+}
+#QID774 input.TextEntryBox {
+  width: 10em;
+}
+/* ##### health question number entry */
+#QID714 input.TextEntryBox {
+  width: 10em;
+}
+#QID724 input.TextEntryBox {
+  width: 10em;
+}
+#QID815 input.TextEntryBox {
+  width: 10em;
+}
+
+/* Add colors to readable alt rows for non-matrix questions - mostly Dem dropdowns */
+#QID1019 tr.ReadableAlt {
+  background: #C1C1C1;
+}
+#QID826 tr.ReadableAlt {
+  background: #C1C1C1;
+}
+#QID830 tr.ReadableAlt {
+  background: #C1C1C1;
+}
+#QID831 tr.ReadableAlt {
+  background: #C1C1C1;
+}
+
+/* moving month, day, and year of marriage closer */
+#QID826 th.c1 {
+  width: 1%;
+}
+
+/* Dem Questions */
+#QID828 table.ChoiceStructure {width: 1px; }
+#QID830 table.ChoiceStructure {width: 1px !important; }
+#QID831 table.ChoiceStructure {width: 1px !important; }
+#QID1019 table.ChoiceStructure {width: 1px !important; }
+#QID826 table.ChoiceStructure {width: 5p; }
+#QID18 label.MultipleAnswer {padding-top: 0px}
+
+.Skin .MC .MACOL .TextEntryBox,
+.Skin .MC .SACOL .TextEntryBox {
+    display: inline-block;
+}
+
+.Skin .SkinInner {
+  max-width: 1019px;
+  background: #f7f6f0;
+}
+
+.Skin #SkinContent{
+  background-color: #
+}
+
+.Skin #Header {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.Skin .ChoiceStructure li {
+    padding: 0em 0;
+}
+
+.Skin label.MultipleAnswer, .Skin label.MultipleAnswer.q-focused, .Skin label.SingleAnswer{
+padding-left: 10px;
+}
+
+.Skin .LabelWrapper {
+  width: 100%;
+}
+
+.Skin #Questions {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.Skin #SkinContent{
+  max-width: 885px;
+}
+
+.Skin .ReadableAlt{
+  background: #dddddd;
+}
+
+.Skin .MC .MACOL .QuestionBody td.ControlContainer {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+}
+
+.Skin .MC .MACOL .QuestionBody td.LabelContatiner {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+}
+
+.Skin .MC .SACOL .QuestionBody td.ControlContainer {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+}
+
+.Skin .MC .SACOL .QuestionBody td.LabelContatiner {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+}
+
+.Skin .ChoiceStructure li {
+    padding: 0.5em 0;
+}
+
+
+/* END Abbey additions */
+
+#Logo {
+  margin-bottom: 0px;
+}
+
+#SkinContent #LogoContainer{
+  background-color: #7a0019;
+}
+
+
+#QID578.QuestionOuter {
+  background: #FFF;
+  border: 0px;
+}
+
+#QID1018.QuestionOuter{
+  background: #FFF;
+  border: 0px;
+}
+
+
+
+/* ########## GENERAL SURVEY FORMATTING ######### */
+
+.Skin .Matrix table .RepeatHeader, .Skin .Matrix table .RepeatHeader td, .Skin .Matrix table .RepeatHeader th {
+  height: 100px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+/* TAL 2015-01-15 Hiding numbers for sliders */
+/*table.SliderGrid thead tr.xlabel {*/
+tr.xlabel, tr.xlabel th, tr.xlabel td{
+  /*display:none;*/
+  height: 1px;
+}
+tr.xlabel th.BorderColor span.TickContainer, .TickContainer span {
+  display: none;
+}
+.Skin div.horizontalbar table.sliderGrid thead tr.xlabel th.ylabel {
+  padding: 0px;
+}
+.Skin div.horizontalbar table.sliderGrid thead tr.xlabel th.ylabel label {
+  display:none;
+}
+.Skin td.LightText label{
+  color: black;
+}
+
+.Skin .BorderColor{
+  border-color: #000000;
+}
+
+/* bipolar matrix dividers between label and response option */
+.Skin .Matrix .Bipolar th.AnswerLeft {
+    text-align: left;
+    width: 50%;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.Skin .Matrix .Bipolar th.AnswerRight {
+    text-align: left;
+    width: 50%;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+
+
+.Skin input.TextEntryBox, .Skin .TE textarea, .Skin .TE .ESTB textarea, .Skin textarea, .Skin input[type="password"], .Skin input[type="text"],
+.Skin input[type="search"] {
+  background-color: #FFFFFF
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+}
+.Skin input.TextEntryBox, .Skin .TE textarea, .Skin textarea, .Skin input[type="password"], .Skin input[type="text"], .Skin input[type="search"],
+.Skin select {
+  /*border: 1px solid #fad983;*/
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+}
+.Skin .QuestionBody .TextEntryBox:focus, .Skin .TE textarea:focus, .Skin .TE input:focus, .Skin .TE .ML textarea:focus,
+.Skin .TE .ESTB textarea:focus, .Skin .RO .RankInput:focus, .Skin .CS input.SumInput:focus, .Skin .CS input.SumTotal:focus,
+.Skin .Matrix .CS input:focus, .Skin .Matrix .RO input:focus, .Skin .SBS .Long:focus, .Skin .horizontalbar tr.Stars td.value input:focus,
+.Skin .horizontalbar table.sliderGrid tr td.value input:focus, .Skin .PGR .DragAndDrop ul:focus, .Skin select:focus, .Skin input:focus {
+  background-color: #FFFFFF;
+  border: 1px solid #7a0019;
+  outline: none;
+}
+.Skin select {
+  font-size: 16px;
+}
+.Skin .Matrix input {
+  margin: 2px auto;
+}
+.Skin .Skin .Matrix .TE .Long td input, .Skin .Skin .Matrix .TE .Medium td input, .Skin .Skin .Matrix .TE .Short td input {
+  margin: 0 auto;
+}
+.Skin .Separator {
+  background: #fef7e5;
+  margin: 0;
+}
+
+.Skin .Matrix table thead td{
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  vertical-align: bottom;
+}
+
+.Skin .Matrix table thead th{
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  vertical-align: bottom;
+}
+
+.Skin .BorderColor {
+  /*border-color: #fad983;*/
+  border-color: #000000;
+}
+.Skin .ReadableAlt, .Skin .LightBG {
+  /*background: #fdf1d1;*/
+  background: #dddddd;
+}
+
+.Skin #Buttons {
+  height: 0px;
+  margin-top: 0px;
+  /*padding: 15px 10px;*/
+  padding: 5px 10px;
+  background: #7a0019;
+  max-width: 940px;
+  /*margin: 0 auto;*/
+}
+div.Skin #Buttons {
+  /*TAL 12/12/2016 counteracting Qualtrics' addition of an overflow:auto on .Skin #Buttons in its default style*/
+  overflow: visible;
+}
+
+.Skin .RO .DND ul.Edited .rank, .Skin .RO .DND ul.NotEdited li:hover .rank, .Skin .RO .DND .rank {
+  background: #7a0019;
+}
+.Skin .RO .DND ul li:hover {
+  background: #e6e6e6;
+}
+.Skin .horizontalbar tr.xlabel th:last-child {
+  border-bottom-color: transparent;
+}
+
+.Skin .ProgressBarFill {
+  /*background-color: #ffcc33;*/
+  background-color: #7a0019;
+  padding: 5px 0px;
+  height: 5px;
+}
+
+.Skin #ProgressBar {
+  /*height: 0px;*/
+  min-height: 50px;
+  /*background: #fef7e5;*/
+  background: #f7f6f0;
+  /*max-width: 940px;*/
+  margin: 0 auto;
+  font-size: 14px;
+  /*padding: 20px 10px;*/
+  padding: 0px;
+}
+.Skin .ProgressBarContainer {
+  padding: 10px;
+  color: #fc3;
+}
+
+.Skin .ProgressBarFillContainer {
+  /*background: #ffffff;*/
+  /*border: none;*/
+  background: #fc3;
+  /*border: 4px solid #fc3;*/
+  border: 3px solid #fc3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  /*height: 15px;*/
+  width: 100px;
+  max-width: 95%;
+}
+
+
+.Skin #Buttons{
+  min-height: 60px
+}
+
+.Skin #Buttons #PreviousButton {
+  float: left;
+}
+.Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton {
+  background-color: #ffcc33;
+  border: 2px solid #ffcc33;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  /*padding: 5px 20px;*/
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  box-shadow: 0px 0px 0px #FFF inset, 0px 2px 0px 0px #ffcc33, 0px 10px 5px transparent;
+}
+/* AMS 20150902 - implemented Tom's 20150722 code */
+/* TAL 20150722 */
+/*@media only screen and (min-device-width: 1024px) {*/
+@media only screen and (min-width: 1024px) {
+
+ /*AMS 2015-05-26 adding TAL's new code to make the mobile code more mobile friendly. New code ends at TAL comment before .Skin #Buttons attribute.*/
+ /*TAL 2015-04-06 these parameters are being changed to be computer-only*/
+  #SkinContent {
+    max-width:960px;
+    /*max-width:960px;*/
+  }
+  #SkinContent #Logo {
+    background: #880000;
+    background-image: url('https://survey.cla.umn.edu/images/NEW_CLA_banner_a.jpg');
+    height: 64px;
+    /*width:960px;*/
+    width: 100%;
+  }
+
+  #SkinContent #LogoContainer{
+    background-color: #7a0019;
+  }
+
+  .Skin .QuestionOuter {
+       max-width: 880px;
+       /*width: 880px;*/
+       border: 1px solid;
+       border-color: #000000;
+       border-radius:3px;
+       margin-left: 35px;
+       margin-right: 35px;
+       margin-top: 10px;
+       padding: 3px;
+       background: #eeeeee;
+  }
+  /*TAL 2015-04-06 end of newly moved parameters*/
+  /*TAL 2015-06-30 slider is too big for mobile, moved here*/
+  table.sliderGrid {
+    width: 750px;
+  }
+
+  .Skin #Buttons #NextButton:hover, .Skin #Buttons #PreviousButton:hover {
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+  }
+  .Skin #Buttons #NextButton:active, .Skin #Buttons #PreviousButton:active {
+    background-color: #cc9900;
+    border-color: #cc9900;
+  }
+}
+.Skin .EndOfSurvey {
+  /*border: 1px solid #fad983;*/
+  border: 1px solid #000000;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+#FooterContainer, .Skin #FooterContainer {
+  background: transparent;
+}
+
+#Footer, .Skin #Footer {
+  color: black;
+  font-size: 10pt;
+  text-align: left;
+  max-width: 960px;
+  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  padding-top: 10px;
+  height: 0px;
+  display: block;
+  padding-left: 45px;
+}
+
+#Footer #regents {
+  /*width: 49%;*/
+  float: left;
+  width: 500px;
+  max-width: 80%;
+}
+#Footer #umn-privacy {
+  /*width: 49%;*/
+  min-width: 50px;
+  text-align: right;
+  float: right;
+}
+
+#Plug, .Skin #Plug {
+  color: black;
+  font-size: 11.2px;
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 30px 10px;
+  text-align: center;
+  display: none;
+}
+#Plug a, .Skin #Plug a {
+  color: #7a0019;
+  text-decoration: none;
+}
+/* AEH 20201205 addition for CAATSA */
+
+.Skin .QuestionOuter.Matrix {
+  max-width: 100%
+}
+
+.Skin #HeaderContainer{
+  background-color: #f7f6f0;
+}
+
+
+/* AMS 20150902 - implemented Tom's 20150722 code */
+/* TAL 20150722 */
+/*@media only screen and (min-device-width: 1024px) {*/
+@media only screen and (min-width: 1024px) {
+
+ /*AMS 2015-05-26 adding TAL's new code to make the mobile code more mobile friendly. New code ends at TAL comment before .Skin #Buttons attribute.*/
+ /*TAL 2015-04-06 these parameters are being changed to be computer-only*/
+  #SkinContent {
+    max-width:960px;
+    background-color: #FFFFFF;
+    /*max-width:960px;*/
+  }
+
+  .Skin .QuestionOuter {
+       max-width: 880px;
+       /*width: 880px;*/
+       border: 1px solid;
+       border-color: #000000;
+       border-radius:3px;
+       margin-left: 35px;
+       margin-right: 35px;
+       margin-top: 10px;
+       padding: 3px;
+       background: #e6e6e6;
+  }
+
+  #Footer, .Skin #Footer {
+    color: black;
+    font-size: 10pt;
+    text-align: left;
+    max-width: 960px;
+    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    padding-top: 10px;
+    height: 0px;
+    display: block;
+    padding-left: 45px;
+  }
+
+
+  table.sliderGrid {
+    width: 750px;
+  }
+
+  #SkinContent #LogoContainer{
+    background-color: #7a0019;
+  }
+
+  .Skin #Buttons #NextButton:hover, .Skin #Buttons #PreviousButton:hover {
+    background-color: #FFCD32;
+    border-color: #FFCD32;
+  }
+  .Skin #Buttons #NextButton:active, .Skin #Buttons #PreviousButton:active {
+    background-color: #FFCD32;
+    border-color: #FFCD32;
+  }
+}
+.Skin .EndOfSurvey {
+  /*border: 1px solid #fad983;*/
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+#Plug, .Skin #Plug {
+  color: black;
+  font-size: 11.2px;
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 30px 10px;
+  text-align: center;
+  display: none;
+}
+#Plug a, .Skin #Plug a {
+  color: #7A0019;
+  text-decoration: none;
+}
+
+
+/***********************************************************************************************************************
+MOBILE
+***********************************************************************************************************************/
+/*AMS 20161004 - ADDING A LESS THAN 300px media element to make sure the UMN logo is alw
+ays present*/
+@media only screen and (min-width: 1px) and (max-width: 299px) {
+  html .Skin #Logo, html .CSS3 .Skin #Logo {
+    background: transparent url("banner.jpg") no-repeat center bottom;
+    background-size: auto 41.33333px;
+    height: 41.33333px;
+  }
+
+  /* Question Specific */
+
+  #QID18 label.MultipleAnswer {padding-top: 0px !important;}
+
+/* Abbey added December 2020 */
+    .Skin .MC .SAVR span.LabelWrapper{
+      width: 90%;
+      display: inline-block;
+    }
+
+/* Abbey added December 2020 */
+    .Skin label.MultipleAnswer{
+      display: inline-block;
+    }
+
+/* Abbey added December 2020 */
+  .Skin .MC .SAVR .QuestionBody label.SingleAnswer{
+    display: contents;
+  }
+
+/* Abbey added December 2020 */
+  .Skin .MC .MACOL .QuestionBody td.LabelContatiner {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+    max-width: 2em;
+}
+  /*AMS 2015-05-26 adding TAL's new code to make the mobile code more mobile friendly. New codes ends at TAL's comment before .Skin #Header attribute.*/
+  /*TAL 2015-04-06 changing these parameters to be mobile friendly*/
+  #SkinContent #Logo {
+    background: #880000;
+    background-image: url('https://survey.cla.umn.edu/images/NEW_CLA_banner_a.jpg');
+    background-repeat:no-repeat;
+    background-size:auto 64px;
+    height: 64px;
+    width: 100%;
+  }
+
+  #Footer, .Skin #Footer {
+    color: black;
+    font-size: 10pt;
+    text-align: left;
+    max-width: 960px;
+    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    padding-top: 10px;
+    height: 0px;
+    display: block;
+    padding-left: 10px;
+  }
+
+}
+
+
+/* AMS 20150902 - implemented Tom's 20150722 code */
+/* TAL 20150722 switching this to min-width and max-width, will see*/
+/*@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {*/
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  html .Skin #Logo, html .CSS3 .Skin #Logo {
+    background: transparent url("banner.jpg") no-repeat center bottom;
+    background-size: auto 41.33333px;
+    height: 41.33333px;
+  }
+
+  /* Question Specific */
+
+  #QID18 label.MultipleAnswer {padding-top: 0px !important;}
+
+  /* Abbey added December 2020 */
+      .Skin .MC .SAVR span.LabelWrapper{
+        width: 90%;
+        display: inline-block;
+      }
+
+  /* Abbey added December 2020 */
+      .Skin label.MultipleAnswer{
+            display: inline-block;
+          }
+
+/* Abbey added December 2020 */
+  .Skin .MC .MACOL .QuestionBody td.LabelContatiner {
+    padding: 2em 0em 0em 0;
+    vertical-align: top;
+    max-width: 2em;
+}
+
+.Skin .MC .SAVR .QuestionBody label.SingleAnswer{
+  display: contents;
+}
+
+  /*AMS 2015-05-26 adding TAL's new code to make the mobile code more mobile friendly. New codes ends at TAL's comment before .Skin #Header attribute.*/
+  /*TAL 2015-04-06 changing these parameters to be mobile friendly*/
+  #SkinContent #Logo {
+    background: #880000;
+    background-image: url('https://survey.cla.umn.edu/images/NEW_CLA_banner_a.jpg');
+    background-repeat:no-repeat;
+    background-size:auto 64px;
+    height: 64px;
+    width: 100%;
+    /*width:960px;*/
+
+  }
+  .Skin .QuestionOuter {
+       width: 90%;
+       border: 1px solid;
+       border-color: #000000;
+       border-radius:3px;
+       margin-left: 4%;
+       margin-right: 4%;
+       margin-top: 10px;
+       padding: 3px;
+       background: #eeeeee;
+  }
+  /*TAL 2015-04-06 end of changed parameters*/
+  /*TAL 2015-06-30 slider is too big for mobile, moved here*/
+  table.sliderGrid {
+    width: 290px;
+  }
+  .Skin #Header {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .Skin .SkinInner {
+    margin: 30px auto;
+    max-width: 760px;
+    background: #f7f6f0;
+  }
+
+  .Skin .MC .SAVR .QuestionBody label {
+    line-height: 0px;
+    font-size: 16px;
+  }
+  .Skin .MC .MAVR .QuestionBody label {
+    line-height: 0px;
+    font-size: 16px;
+  }
+  .Skin .TE input, .Skin input.TextEntryBox, .Skin .TE textarea, .Skin .TE .ESTB textarea, .Skin textarea, .Skin input[type="password"],
+  .Skin input[type="text"], .Skin input[type="search"] {
+    background-color: #FFFFFF;
+    /*AMS: commented this out because text boxes would shrink to nearly nothing when the screen size was brought to within this media section*/
+    /*width: 100% !important;*/
+  }
+
+#Footer, .Skin #Footer {
+  color: black;
+  font-size: 10pt;
+  text-align: left;
+  max-width: 960px;
+  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  padding-top: 10px;
+  height: 0px;
+  display: block;
+  padding-left: 10px;
+}
+
+}
+
+/***********************************************************************************************************************
+TABLET
+***********************************************************************************************************************/
+/*AMS 2015-05-26 modified max-device-width  1023 because original 1024 overlaps with computer device width set in this css*/
+/*TAL 20150722*/
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/*AMS - Commented this line out because it causes the web page to skew more to the right and increase the need for vertical scrolling*/
+  /*#SurveyEngineBody.iOS .Skin .SkinInner, #SurveyEngineBody.Android .Skin .SkinInner {
+    max-width: 760px !important;
+  }*/
+
+/* Question Specific */
+
+#QID18 label.MultipleAnswer {padding-top: 0px !important;}
+
+  /* Abbey added December 2020 */
+      .Skin .MC .SAVR span.LabelWrapper{
+        width: 90%;
+        display: inline-block;
+      }
+
+  /* Abbey added December 2020 */
+          .Skin label.MultipleAnswer{
+            display: inline-block;
+          }
+
+  .Skin .MC .MAVR .QuestionBody label, .Skin .MC .SAVR .QuestionBody label {
+    line-height: 0px;
+    font-size: 16px;
+  }
+
+  .Skin .MC .SAVR .QuestionBody label.SingleAnswer{
+    display: contents;
+  }
+
+  /*TAL 2015-06-30 slider is too big for mobile, moved here*/
+  table.sliderGrid {
+    width: 600px;
+  }
+  #SkinContent #Logo {
+    background: #880000;
+    background-image: url('https://survey.cla.umn.edu/images/NEW_CLA_banner_a.jpg');
+    background-repeat:no-repeat;
+    background-size:auto 64px;
+    height: 64px;
+    width: 100%;
+    /*width:960px;*/
+
+  }
+  .Skin .QuestionOuter {
+      /* width: 880px;*/
+       border: 1px solid;
+       border-color: #000000;
+       border-radius:3px;
+       margin-left: 35px;
+       margin-right: 35px;
+       margin-top: 10px;
+       padding: 3px;
+       background: #eeeeee;
+  }
+  .Skin #Header {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+  .Skin .SkinInner {
+    margin: 30px auto;
+    max-width: 760px;
+    background: #f7f6f0;
+  }
+  .Skin #SkinContent {
+    border: none;
+  }
+  .Skin .TE input, .Skin input.TextEntryBox, .Skin .TE textarea, .Skin .TE .ESTB textarea, .Skin textarea, .Skin input[type="password"],
+  .Skin input[type="text"], .Skin input[type="search"] {
+    /*AMS: commented this out because text boxes would shrink to nearly nothing when the screen size was brought to within this media section*/
+    /*width: 100% !important;*/
+  }
+
+  #Footer, .Skin #Footer {
+    color: black;
+    font-size: 10pt;
+    text-align: left;
+    max-width: 960px;
+    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    padding-top: 10px;
+    height: 0px;
+    display: block;
+    padding-left: 10px;
+  }
+
+}
