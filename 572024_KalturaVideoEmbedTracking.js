@@ -53,18 +53,6 @@ margin: auto
 Qualtrics.SurveyEngine.addOnload(function()
 {
 
-// CSS modifications-- make question container larger for non-mobile devices
-
-var dev;
-dev = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-
-if(dev){}
-else
-{
-jQuery("#SkinContent").css("max-width","1000px"); // adjust this as per your need...
-
-}
-
 // embed the video using kWidget
 	kWidget.embed({
 		'targetId': 'myEmbedTarget',
