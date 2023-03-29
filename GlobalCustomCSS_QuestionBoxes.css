@@ -1,0 +1,75 @@
+/* NOTE: add the following to the Custom CSS text box within the global Look & Feel menu (under the Style menu) 
+ NOTE: ensure that your template is selected as "Blank" */
+
+.Skin #LogoContainer {
+	padding: 15px;
+}
+
+.Skin .QuestionOuter {
+	   padding: 30px;
+       border: 1px solid;
+       border-color: #000000;
+       background: #FFFFFF;
+}
+
+.Skin #BrandingFooter, .Skin #Footer {
+    margin-top: 30px;
+}
+
+.Skin #PushStickyFooter {
+    height: 1px;
+}
+
+.Skin .MC .QuestionBody label {
+	background: #FFF
+}
+
+.Skin .QuestionBody{
+	padding-bottom: 0px !important;
+}
+
+.Skin .QuestionOuter.Highlight {background:#fae1de}
+.Skin .QuestionOuter.Highlight .ReadableAlt {background:#fae1de}
+
+.Skin .q-matrix .table-cell {
+	font-size: 19px !important;
+}
+
+.Skin #Plug a {
+background: #F0F0F0 !important; //
+background-color: black;
+font-size: 8px !important; 
+color: #F0F0F0 !important;
+}
+
+
+.Skin .Matrix table th.Selection{
+  font-weight: bold; 
+} 
+
+
+.Skin .Matrix table th{
+	font-size: 16px;
+}
+
+.Skin .Matrix .RepeatHeader {
+   font-size: 16px !important; 
+}
+
+.Skin .Matrix .QuestionBody {
+   font-size: 16px; 
+}
+
+.Skin label.q-radio.q-checked {
+   background-color: #711010 !important;
+}
+
+
+@media (max-width: 480px) {
+    .Skin .QuestionOuter {
+        padding: 5px; 
+    }
+	.Skin .QuestionText, .Skin .DB .QuestionText {
+	    font-size: 17px; 
+	}
+}
