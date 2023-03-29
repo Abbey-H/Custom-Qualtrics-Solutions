@@ -1,6 +1,6 @@
 /* ############################################################
 ## jQuery Dialog Box Code
-## Used for the "Research Data Security Classification" Survey : https://umn.qualtrics.com/jfe/form/SV_2rFfUwQShKEAyih
+## Example use case : https://umn.qualtrics.com/jfe/form/SV_2rFfUwQShKEAyih
 ## Code created by: Abbey Hammell
 ## Date: Fall 2019
 ##
